@@ -26,7 +26,7 @@ module.exports = {
         },
         {
           text: '简历',
-          link: 'https://hacknical.com/Iamlqyfly/archive'
+          link: 'https://hacknical.com/Iamlqyfly/resume'
           // link: '/zh/resume/'
         }
         
@@ -51,7 +51,7 @@ module.exports = {
         },
         {
           text: 'resume',
-          link: 'https://hacknical.com/Iamlqyfly/archive'
+          link: 'https://hacknical.com/Iamlqyfly/resume'
           // link: '/en/resume/'
         },
       ]
