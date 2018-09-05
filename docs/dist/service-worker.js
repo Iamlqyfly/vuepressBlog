@@ -25,7 +25,7 @@ self.__precacheManifest = [
   },
   {
     "url": "404.html",
-    "revision": "a8469ab15d90403a396eff97c75857a2"
+    "revision": "a51c68f5ce12b53e4723e527b5bc9288"
   },
   {
     "url": "assets/css/0.styles.185c448b.css",
@@ -124,24 +124,24 @@ self.__precacheManifest = [
     "revision": "1f0381c928d86a7266948dd56872c5c8"
   },
   {
-    "url": "assets/js/app.7f101515.js",
-    "revision": "1ae39f280155ca9ca1fb65bfa3fbcacf"
+    "url": "assets/js/app.6163f9eb.js",
+    "revision": "52356136186cf9e845fc2ed6128bad06"
   },
   {
     "url": "en/doodle/index.html",
-    "revision": "ca51da588a0db701e6242e4b42edcf7d"
+    "revision": "11d3f1889ab5a8ac091395efcdaa7053"
   },
   {
     "url": "en/index.html",
-    "revision": "4b0c1a8b18bbd0114306a6302f8106c0"
+    "revision": "4db73b79f1d51c821906b9d9f0632bdc"
   },
   {
     "url": "en/photography/index.html",
-    "revision": "d587c8125e47e1826c6107f852b4c069"
+    "revision": "8ff80beabd8b2b51488d364408acaa27"
   },
   {
     "url": "en/resume/index.html",
-    "revision": "350e36f35ebd57a37a8c62c7d9d2f467"
+    "revision": "2bd1aac9f8b4b3810a5c3691c3131450"
   },
   {
     "url": "imgs/2.jpg",
@@ -157,51 +157,51 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3fdaff56edc74dcca28dfd2c75e96891"
+    "revision": "c951182ba7032c5b4e768d2fbaa33363"
   },
   {
     "url": "zh/article/array-summary.html",
-    "revision": "abd0a9c161b908a9495902488a782029"
+    "revision": "a4f25d11ea07e561eef5c21c1dd4f326"
   },
   {
     "url": "zh/article/css-variable-study.html",
-    "revision": "1faa859e45a0c96e4378b63b6f812cbd"
+    "revision": "38d62ecd783b17345509971116a9e4e1"
   },
   {
     "url": "zh/article/express-first-day.html",
-    "revision": "ed20525c44b22007157d3336045cd096"
+    "revision": "87241050debc9500e1c133c5d240fe0e"
   },
   {
     "url": "zh/article/index.html",
-    "revision": "030766c35c15dde145ee6e2cc901f694"
+    "revision": "eff52ae5a4d629f3cc6247accd83526d"
   },
   {
     "url": "zh/article/mongoDB-first-day.html",
-    "revision": "dd91fef8cef7598aa12585abee5f4592"
+    "revision": "94cd6a8c15438e95a866e32224977322"
   },
   {
     "url": "zh/article/set-and-map.html",
-    "revision": "c89066f193a9cb931f2f836ae46dd223"
+    "revision": "62773a62f153af9084db12c6e071571f"
   },
   {
     "url": "zh/article/string-summary.html",
-    "revision": "387c153bff0344c65927cabfa646a07c"
+    "revision": "d6b20d8953b20cc695e82dff1bf21618"
   },
   {
     "url": "zh/doodle/index.html",
-    "revision": "90decbbaf0cb04a64351e8e90aa8abd6"
+    "revision": "72a2ef7e64a0a0df3d01b72a7806c425"
   },
   {
     "url": "zh/index.html",
-    "revision": "46f1c9edf6ec36917de7c1856c63abd8"
+    "revision": "864565d1072865b597bcd92b8db58e25"
   },
   {
     "url": "zh/photography/index.html",
-    "revision": "84ee16b3a4fc189898c8e0d6dfbba01d"
+    "revision": "f8263de01dd69499674cd24ffc3ae1af"
   },
   {
     "url": "zh/resume/index.html",
-    "revision": "18e8acb5c45ca1ac8434b1f823b0f90d"
+    "revision": "591ab332cad956d7d4dabcbb91d539e6"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
