@@ -1,9 +1,6 @@
 ---
 components: ArticleList
 items:
-  - title: JavaScript的数组总结
-    description: 总结日常常用的JavaScript数组
-    link: array-summary
   - title: JavaScript的字符串总结
     description: 总结日常常用的JavaScript字符串
     link: string-summary  

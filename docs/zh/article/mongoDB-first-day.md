@@ -18,27 +18,27 @@ b.在d:\mongo（可随意起）下面建一个logs文件夹<br> d:\mongo\logs �
 c.在d:\mongo（可随意起）下面建一个etc(随意起，放配置文件)文件夹 d:\mongo\etc ,在里面建一个文件mongo.conf
 d.打开mongo.conf文件，修改如下：
 数据库路径
-```
+```json
 dbpath=d:\mongo\data\
 ```
 日志输出文件路径
-```
+```json
 logpath=d:\mongo\logs\mongodb.log
 ```
 错误日志采用追加模式，配置这个选项后mongodb的日志会追加到现有的日志文件，而不是从新创建一个新文件
-```
+```json
 logappend=true
 ```
 启用日志文件，默认启用
-```
+```json
 journal=true
 ```
 这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false
-```
+```json
 quiet=false
 ```
 端口号 默认为27017
-```
+```json
 port=27017
 ```
 ##### 三. 通过在命令中传参的形式启动Mongo
@@ -47,12 +47,12 @@ port=27017
 ![image](http://wx1.sinaimg.cn/mw690/0060lm7Tly1ftalb0gjs0j30mf02o0jr.jpg
 )
 1. 输入如下命令行
-```
+```json
 mongod --dbpath d:\mongo\data --journal
 ```
 看到 waiting for connections on port 27017 等，说明启动成功
 在浏览器输入 
-```
+```json
 localhost:27017
 ```
 ![image](http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftalgd7kcfj30nf0db3ye.jpg)
