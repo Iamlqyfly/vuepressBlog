@@ -52,7 +52,6 @@ module.exports = {
         {
           text: 'resume',
           link: 'https://hacknical.com/Iamlqyfly/resume?locale=zh'
-          // link: '/en/resume/'
         },
       ]
     }
