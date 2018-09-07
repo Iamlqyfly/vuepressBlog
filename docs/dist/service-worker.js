@@ -25,7 +25,7 @@ self.__precacheManifest = [
   },
   {
     "url": "404.html",
-    "revision": "56624f16448a4f092bb53d772b32fefc"
+    "revision": "56b947554a81cb9106b01e64b1e3de4e"
   },
   {
     "url": "assets/css/0.styles.185c448b.css",
@@ -108,8 +108,8 @@ self.__precacheManifest = [
     "revision": "5757e3a9799dfb8548b7d3a23a7d6f01"
   },
   {
-    "url": "assets/js/6.8db30d26.js",
-    "revision": "3a43c6288cd01566f2e7fc34a8e35de8"
+    "url": "assets/js/6.9ac50051.js",
+    "revision": "a97e5edb22702bab09bdfa778142fc8c"
   },
   {
     "url": "assets/js/7.6f246152.js",
@@ -124,24 +124,24 @@ self.__precacheManifest = [
     "revision": "1f0381c928d86a7266948dd56872c5c8"
   },
   {
-    "url": "assets/js/app.fde4114e.js",
-    "revision": "33ab00ee49ffdbe49b456993d951f159"
+    "url": "assets/js/app.a45cabf6.js",
+    "revision": "5d80af041cb9eb550a93b689f6847d4c"
   },
   {
     "url": "en/doodle/index.html",
-    "revision": "dcf8ab5a01aa25c7cdb7190f39ee5a60"
+    "revision": "1aaa29894fb292e3d1ec7d5211343c31"
   },
   {
     "url": "en/index.html",
-    "revision": "184288d2dac07739ab420b934ee0b9d0"
+    "revision": "cde731ab3d5a2e5f776e099ff07ef376"
   },
   {
     "url": "en/photography/index.html",
-    "revision": "38461457d5621dbd87952efe8407cd4e"
+    "revision": "a0e1e601c1a1d0b7627dcf72ef268d0c"
   },
   {
     "url": "en/resume/index.html",
-    "revision": "ce534d7bab5da836dc561074ea8ff70e"
+    "revision": "6ed8bee0d1e8adec1a9b244b60c48954"
   },
   {
     "url": "imgs/2.jpg",
@@ -157,51 +157,51 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "fcb5d6cf87e149368dde17dcdf9616eb"
+    "revision": "b698f41d261b88f6447e05f01a7df8f1"
   },
   {
     "url": "zh/article/array-summary.html",
-    "revision": "c783353586ea5fb3fd5c4ed88eb3e34b"
+    "revision": "e7dbfeb19961a69d6ddbec6708490771"
   },
   {
     "url": "zh/article/css-variable-study.html",
-    "revision": "38ee19d60a7cd7d2b28ed50889cd3e69"
+    "revision": "9435ecf267b4173845233e81847bfe01"
   },
   {
     "url": "zh/article/express-first-day.html",
-    "revision": "543bd4d11266b210f57815a0cfb86341"
+    "revision": "18fab3ea227de25446ebb753caf6807b"
   },
   {
     "url": "zh/article/index.html",
-    "revision": "c5eb9dd6dbab5faa639077db87e56a0a"
+    "revision": "39c455c411ee2e3340140011f915fb3c"
   },
   {
     "url": "zh/article/mongoDB-first-day.html",
-    "revision": "b12d3cca44e0c2398a3de1de1ee91477"
+    "revision": "ec03b6d09050d4fdafc3d5824a2e8e58"
   },
   {
     "url": "zh/article/set-and-map.html",
-    "revision": "bc9d43849b0b5b482f91d3ef7d3919c3"
+    "revision": "7d1885f5a752df312a26cd70cc08a7c4"
   },
   {
     "url": "zh/article/string-summary.html",
-    "revision": "a32e9440b598a06d09c3c65025fc0775"
+    "revision": "813d4c328765fcc607f34aee69640899"
   },
   {
     "url": "zh/doodle/index.html",
-    "revision": "241ede5b867231b5b742dc9b0d4188cc"
+    "revision": "acdafa202cd488357922fdb177bef38e"
   },
   {
     "url": "zh/index.html",
-    "revision": "b823d844c26fba805adb814dcd812015"
+    "revision": "fe1a716eac7771f80f7ea256e2c10e31"
   },
   {
     "url": "zh/photography/index.html",
-    "revision": "8dfe934b71316ede8826289c27c17f61"
+    "revision": "f674f9e8225e33a125683e0dc71fd56b"
   },
   {
     "url": "zh/resume/index.html",
-    "revision": "009ed8c4a5f9c92e7943169031842666"
+    "revision": "8d1cd27e3fa0f4e97c65b1923eba62f1"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

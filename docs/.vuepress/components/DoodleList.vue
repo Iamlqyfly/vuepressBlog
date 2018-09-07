@@ -35,6 +35,10 @@ export default {
           img: '/vuepressBlog/imgs/4.jpg',
           alt: '简约人像' 
         },
+        { 
+          img: '/vuepressBlog/imgs/1.jpg',
+          alt: '简约人像' 
+        }
       ]
     };
 
