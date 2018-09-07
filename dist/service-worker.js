@@ -25,7 +25,7 @@ self.__precacheManifest = [
   },
   {
     "url": "404.html",
-    "revision": "38426be9f819aedc3441d25e15601e00"
+    "revision": "7e764e0a9b1a18463a8a4819f3bdc417"
   },
   {
     "url": "assets/css/0.styles.185c448b.css",
@@ -120,24 +120,24 @@ self.__precacheManifest = [
     "revision": "4f5183ee5d5d26fe6205b7c49c904550"
   },
   {
-    "url": "assets/js/app.dee9a032.js",
-    "revision": "ad9173f0c27f24b1dc1ed61a2f6309f2"
+    "url": "assets/js/app.a906fba3.js",
+    "revision": "111a903bf49919c2ff8cf2092d35877e"
   },
   {
     "url": "en/doodle/index.html",
-    "revision": "02cba5574d42dfa5198013bd09e969e7"
+    "revision": "99afe9be5051f04d823b5d5044057036"
   },
   {
     "url": "en/index.html",
-    "revision": "fe7ead1b588b543f39fa7cf82b201117"
+    "revision": "defa116595e20c300ea0486d6e9b2e1f"
   },
   {
     "url": "en/photography/index.html",
-    "revision": "310f3b4729cc4762e13e9b5f837221a4"
+    "revision": "fe34abf44dafd2a031db6c214aff6ac3"
   },
   {
     "url": "en/resume/index.html",
-    "revision": "4f39f2078f7dab244e3b6be5029b39f4"
+    "revision": "59f310d9e1a71b9cfc359a51eaf8853a"
   },
   {
     "url": "imgs/2.jpg",
@@ -153,47 +153,47 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "63a798e9434003055fdb1a3729567f98"
+    "revision": "32f5eb63e439c83da2c3f1740d616847"
   },
   {
     "url": "zh/article/array-summary.html",
-    "revision": "85a886387bc2a23a2178e596bd7cdf38"
+    "revision": "dd901d03df99d617952ad2b3d12082a3"
   },
   {
     "url": "zh/article/css-variable-study.html",
-    "revision": "e362455d911aee9aedcc5c28cbd48503"
+    "revision": "07239f08ed818f657abee26c9c37eb57"
   },
   {
     "url": "zh/article/express-first-day.html",
-    "revision": "73c9ea77321b57175e7f4911075409bb"
+    "revision": "758a8d9e95adb97959381e1134bd912b"
   },
   {
     "url": "zh/article/index.html",
-    "revision": "29fe839849e2f8dc3c677fa18c515def"
+    "revision": "6cc720796145ba534bc78e400d68ebf7"
   },
   {
     "url": "zh/article/mongoDB-first-day.html",
-    "revision": "1c9ca14c47ac1b52192604a0dec26cbf"
+    "revision": "e5220973db36851d3b6101885a7c5794"
   },
   {
     "url": "zh/article/set-and-map.html",
-    "revision": "1e9f2ed22c2484ae1c5bce8fa954c1b5"
+    "revision": "a8a61a809327ec5db7cc0dfa3158936c"
   },
   {
     "url": "zh/article/string-summary.html",
-    "revision": "dc83dad6992bab423a10b8fcaf3a2460"
+    "revision": "ad6071d841f8b77d90f0fdf6a197b0d7"
   },
   {
     "url": "zh/doodle/index.html",
-    "revision": "b84c33b43a61e1d72ac38ca8288571bc"
+    "revision": "7fa4a4c182350fe2407bb48563fbffae"
   },
   {
     "url": "zh/photography/index.html",
-    "revision": "c97830078f012212dd18b04dcc730a46"
+    "revision": "2ee1cc026ad264bda366fb739160e319"
   },
   {
     "url": "zh/resume/index.html",
-    "revision": "a42d3ac369e0b10e9d121234ab8a68fa"
+    "revision": "2734f2707ab61a2498b5da15bbf0cb92"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
