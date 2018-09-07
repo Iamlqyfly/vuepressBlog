@@ -13,7 +13,7 @@ module.exports = {
       lastUpdated: '上次更新',
       nav: [
         {
-          text: '博文',
+          text: '文章',
           link: '/zh/article/'
         },
         {
