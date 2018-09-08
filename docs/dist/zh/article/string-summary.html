@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript的字符串总结 | iamlqy</title>
+    <meta name="description" content="Web Developer、Amateur painter、Wanna be a designer">
+    
+    
+    <link rel="preload" href="/vuepressBlog/assets/css/0.styles.185c448b.css" as="style"><link rel="preload" href="/vuepressBlog/assets/js/app.ef9b4f08.js" as="script"><link rel="preload" href="/vuepressBlog/assets/js/18.863e58d3.js" as="script"><link rel="prefetch" href="/vuepressBlog/assets/js/9.83216727.js"><link rel="prefetch" href="/vuepressBlog/assets/js/2.ecd68e85.js"><link rel="prefetch" href="/vuepressBlog/assets/js/3.6fe41834.js"><link rel="prefetch" href="/vuepressBlog/assets/js/4.f835dba1.js"><link rel="prefetch" href="/vuepressBlog/assets/js/5.e10100bd.js"><link rel="prefetch" href="/vuepressBlog/assets/js/6.8c6d4596.js"><link rel="prefetch" href="/vuepressBlog/assets/js/7.108a9534.js"><link rel="prefetch" href="/vuepressBlog/assets/js/8.0a0a3ae8.js"><link rel="prefetch" href="/vuepressBlog/assets/js/10.5acd52d0.js"><link rel="prefetch" href="/vuepressBlog/assets/js/11.da48f062.js"><link rel="prefetch" href="/vuepressBlog/assets/js/12.22f6de64.js"><link rel="prefetch" href="/vuepressBlog/assets/js/13.1c87c438.js"><link rel="prefetch" href="/vuepressBlog/assets/js/14.88bc9c97.js"><link rel="prefetch" href="/vuepressBlog/assets/js/15.6a2eafbd.js"><link rel="prefetch" href="/vuepressBlog/assets/js/16.3543c62a.js"><link rel="prefetch" href="/vuepressBlog/assets/js/17.b0b853e9.js"><link rel="prefetch" href="/vuepressBlog/assets/js/19.b9b286c0.js"><link rel="prefetch" href="/vuepressBlog/assets/js/20.9dd6b3a1.js"><link rel="prefetch" href="/vuepressBlog/assets/js/21.add7669d.js">
+    <link rel="stylesheet" href="/vuepressBlog/assets/css/0.styles.185c448b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepressBlog/" class="home-link router-link-active"><!----> <span class="site-name">iamlqy</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepressBlog/zh/article/" class="nav-link router-link-active">文章</a></div><div class="nav-item"><a href="/vuepressBlog/zh/doodle/" class="nav-link">涂鸦</a></div><div class="nav-item"><a href="/vuepressBlog/zh/photography/" class="nav-link">摄影</a></div><div class="nav-item"><a href="https://hacknical.com/Iamlqyfly/resume?locale=zh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressBlog/zh/article/string-summary.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/en/" class="nav-link">English</a></li></ul></div></div> <a href="https://github.com/Iamlqyfly/vuepressBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepressBlog/zh/article/" class="nav-link router-link-active">文章</a></div><div class="nav-item"><a href="/vuepressBlog/zh/doodle/" class="nav-link">涂鸦</a></div><div class="nav-item"><a href="/vuepressBlog/zh/photography/" class="nav-link">摄影</a></div><div class="nav-item"><a href="https://hacknical.com/Iamlqyfly/resume?locale=zh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressBlog/zh/article/string-summary.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/en/" class="nav-link">English</a></li></ul></div></div> <a href="https://github.com/Iamlqyfly/vuepressBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>最新文章</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vuepressBlog/zh/article/array-summary.html" class="sidebar-link">JavaScript的数组总结</a></li><li><a href="/vuepressBlog/zh/article/css-variable-study.html" class="sidebar-link">CSS Variable Study</a></li><li><a href="/vuepressBlog/zh/article/express-first-day.html" class="sidebar-link">搭建基于express框架的运行环境</a></li><li><a href="/vuepressBlog/zh/article/mongoDB-first-day.html" class="sidebar-link">MongoDB体验第一天</a></li><li><a href="/vuepressBlog/zh/article/set-and-map.html" class="sidebar-link">Hi、了解下Set和Map</a></li><li><a href="/vuepressBlog/zh/article/string-summary.html" class="active sidebar-link">JavaScript的字符串总结</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h5 id="tostring-跟-valueof-返回的都是自己">toString 跟 valueOf 返回的都是自己</h5> <div class="language-json extra-class"><pre class="language-json"><code>var str = 'abcdefg'
+console.log(str.toString(<span class="token punctuation">)</span><span class="token punctuation">)</span> // -&gt; 'abcdefg'
+console.log(str.valueOf(<span class="token punctuation">)</span><span class="token punctuation">)</span> // -&gt; 'abcdefg'
+</code></pre></div><h5 id="charat-index-返回在指定位置的字符">charAt(index): 返回在指定位置的字符</h5> <div class="language-json extra-class"><pre class="language-json"><code>var charAtStr = 'abcdefg'
+var charAtEle = charAtStr.charAt(<span class="token number">3</span><span class="token punctuation">)</span>
+console.log(charAtEle<span class="token punctuation">)</span>
+// -&gt; d
+</code></pre></div><h5 id="charcodeat-index-返回指定位置的字符的-unicode-编码">charCodeAt(index): 返回指定位置的字符的 Unicode 编码</h5> <div class="language-json extra-class"><pre class="language-json"><code>var charCodeAtStr = 'abcdefg'
+var charCodeAtEle = charCodeAtStr.charCodeAt(<span class="token number">3</span><span class="token punctuation">)</span>
+console.log(charCodeAtEle<span class="token punctuation">)</span>
+// -&gt; <span class="token number">100</span>  (d 的 Unicode编码是 <span class="token number">100</span><span class="token punctuation">)</span>
+</code></pre></div><h5 id="fromcharcode-n1-n2-nx-将-unicode-编码转为一个字符-接受一个或多个-unicode-值，即要创建的字符串中的字符的-unicode-编码">fromCharCode(n1, n2, ..., nX): 将 Unicode 编码转为一个字符 接受一个或多个 Unicode 值，即要创建的字符串中的字符的 Unicode 编码</h5> <div class="language-json extra-class"><pre class="language-json"><code>var fromCharCode1 = String.fromCharCode(<span class="token number">100</span><span class="token punctuation">)</span>
+var fromCharCode2 = String.fromCharCode(<span class="token number">72</span><span class="token punctuation">,</span><span class="token number">69</span><span class="token punctuation">,</span><span class="token number">76</span><span class="token punctuation">,</span><span class="token number">76</span><span class="token punctuation">,</span><span class="token number">79</span><span class="token punctuation">)</span>
+console.log(fromCharCode1<span class="token punctuation">)</span> // -&gt; d
+console.log(fromCharCode2<span class="token punctuation">)</span> // -&gt; HELLO
+</code></pre></div><h5 id="string-indexof-searchvalue-start">string.indexOf(searchvalue,start):</h5> <p>返回某个指定的字符串值在字符串中首次出现的位置,如果没有找到匹配的字符串则返回 -1</p> <div class="language-json extra-class"><pre class="language-json"><code>/*
+    searchvalue<span class="token operator">:</span> 必需。规定需检索的字符串值
+    start<span class="token operator">:</span>  可选的整数参数。规定在字符串中开始检索的位置。它的合法取值是 <span class="token number">0</span> 到 string Object.length - <span class="token number">1</span>。如省略该参数，则将从字符串的首字符开始检索
+*/json
+var indexOfStr = 'abcdbfg'
+var indexOfEle1 = indexOfStr.indexOf('b'<span class="token punctuation">)</span>
+var indexOfEle2 = indexOfStr.indexOf('b'<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+console.log(indexOfEle1<span class="token punctuation">)</span> // -&gt; <span class="token number">1</span>
+console.log(indexOfEle2<span class="token punctuation">)</span> // -&gt; <span class="token number">4</span>
+
+</code></pre></div><h5 id="string-lastindexof-searchvalue-start-返回一个指定的字符串值最后出现的位置，如果指定第二个参数-start，则在一个字符串中的指定位置从后向前搜索">string.lastIndexOf(searchvalue,start): 返回一个指定的字符串值最后出现的位置，如果指定第二个参数 start，则在一个字符串中的指定位置从后向前搜索</h5> <div class="language-json extra-class"><pre class="language-json"><code>/*
+    searchvalue<span class="token operator">:</span> 必需。规定需检索的字符串值
+    start<span class="token operator">:</span> 可选的整数参数。规定在字符串中开始检索的位置。它的合法取值是 <span class="token number">0</span> 到 stringObject.length - <span class="token number">1</span>。如省略该参数，则将从字符串的最后一个字符处开始检索。
+*/
+var lastIndexOfStr = 'abcdbfg'
+var lastIndexOfEle1 = lastIndexOfStr.lastIndexOf('b'<span class="token punctuation">)</span>
+var lastIndexOfEle2 = lastIndexOfStr.lastIndexOf('b'<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+console.log(lastIndexOfEle1<span class="token punctuation">)</span> // -&gt; <span class="token number">4</span>
+console.log(lastIndexOfEle2<span class="token punctuation">)</span> // -&gt; <span class="token number">1</span>
+
+</code></pre></div><h5 id="string-concat-string1-string2-stringx-concat-方法用于连接两个或多个字符串。该方法没有改变原有字符串，但是会返回连接两个或多个字符串新字符串">string.concat(string1, string2, ..., stringX): concat() 方法用于连接两个或多个字符串。该方法没有改变原有字符串，但是会返回连接两个或多个字符串新字符串</h5> <div class="language-json extra-class"><pre class="language-json"><code>var concatStr1 = 'abcd'
+var concatStr2 = 'efg'
+var concatStr = concatStr1.concat(concatStr2<span class="token punctuation">)</span>
+console.log(concatStr<span class="token punctuation">)</span>
+// -&gt; 'abcdefg'
+</code></pre></div><h5 id="string-match-regexp-在字符串内检索指定的值，或找到一个或多个正则表达式的匹配">string.match(regexp): 在字符串内检索指定的值，或找到一个或多个正则表达式的匹配</h5> <div class="language-json extra-class"><pre class="language-json"><code>var matchStr = 'abcdbef'
+var matchEle = matchStr.match(/b/gi<span class="token punctuation">)</span>
+console.log(matchEle<span class="token punctuation">)</span>
+// -&gt; <span class="token punctuation">[</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">]</span>
+</code></pre></div><h5 id="string-replace-searchvalue-newvalue-在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串">string.replace(searchvalue,newvalue): 在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串</h5> <div class="language-json extra-class"><pre class="language-json"><code>/*
+    searchvalue<span class="token operator">:</span> 必须。规定子字符串或要替换的模式的 RegExp 对象。 请注意，如果该值是一个字符串，则将它作为要检索的直接量文本模式，而不是首先被转换为 RegExp 对象。
+    newvalue<span class="token operator">:</span> 必需。一个字符串值。规定了替换文本或生成替换文本的函数。
+*/
+var replaceStr1 = 'abcdafg'
+var replaceEle1 = replaceStr1.replace(/a/g<span class="token punctuation">,</span> 'z'<span class="token punctuation">)</span>
+console.log(replaceEle1<span class="token punctuation">)</span> // -&gt; zbcdzfg
+
+var replaceStr2 = 'a1b2c3d4'
+var replaceEle2 = replaceStr2.replace(/\d/g<span class="token punctuation">,</span> function(v<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    return Math.pow(v<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console.log(replaceEle2<span class="token punctuation">)</span> // -&gt; a1b4c9d16
+
+</code></pre></div><h5 id="search-searchvalue-检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。如果没有找到任何匹配的子串，则返回-1">search(searchvalue): 检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。如果没有找到任何匹配的子串，则返回 -1</h5> <div class="language-json extra-class"><pre class="language-json"><code>var searchStr = 'Abcdaef'
+searchStrEle = searchStr.search(/a/<span class="token punctuation">)</span>
+searchStrEle2 = searchStr.search(/a/i<span class="token punctuation">)</span>
+console.log(searchStrEle<span class="token punctuation">)</span> // -&gt; <span class="token number">4</span>
+console.log(searchStrEle2<span class="token punctuation">)</span> // -&gt; <span class="token number">0</span>
+</code></pre></div><p>说明:
+search() 方法不执行全局匹配，它将忽略标志 g。它同时忽略 regexp 的 lastIndex 属性，并且总是从字符串的开始进行检索，这意味着它总是返回 stringObject 的第一个匹配的位置</p> <h5 id="string-slice-start-end-提取字符串的某个部分，并以新的字符串返回被提取的部分">string.slice(start,end): 提取字符串的某个部分，并以新的字符串返回被提取的部分</h5> <div class="language-json extra-class"><pre class="language-json"><code>/*
+    start<span class="token operator">:</span>必须. 要抽取的片断的起始下标。第一个字符位置为 <span class="token number">0</span>
+    end<span class="token operator">:</span> 可选。 紧接着要抽取的片段的结尾的下标。若未指定此参数，则要提取的子串包括 start 到原字符串结尾的字符串。如果该参数是负数，那么它规定的是从字符串的尾部开始算起的位置。
+*/
+var sliceStr = 'abcdefg'
+var sliceStrEle = sliceStr.slice(<span class="token number">1</span><span class="token punctuation">,</span> -<span class="token number">1</span><span class="token punctuation">)</span>
+console.log(sliceStrEle<span class="token punctuation">)</span>
+// -&gt; bcdef
+</code></pre></div><h5 id="string-split-separator-limit-把一个字符串分割成字符串数组。如果把空字符串-用作-separator，那么-stringobject-中的每个字符之间都会被分割">string.split(separator,limit): 把一个字符串分割成字符串数组。如果把空字符串 (&quot;&quot;) 用作 separator，那么 stringObject 中的每个字符之间都会被分割</h5> <div class="language-json extra-class"><pre class="language-json"><code>/*
+    separator<span class="token operator">:</span> 可选。字符串或正则表达式，从该参数指定的地方分割 string Object。
+    limit<span class="token operator">:</span> 可选。该参数可指定返回的数组的最大长度。如果设置了该参数，返回的子串不会多于这个参数指定的数组。如果没有设置该参数，整个字符串都会被分割，不考虑它的长度。
+*/
+var splitStr = 'abcdecg'
+var splitStrEle1 = splitStr.split('c'<span class="token punctuation">)</span>
+var splitStrEle2 = splitStr.split(''<span class="token punctuation">)</span>
+console.log(splitStrEle1<span class="token punctuation">)</span> // -&gt; <span class="token punctuation">[</span><span class="token string">&quot;ab&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;de&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;g&quot;</span><span class="token punctuation">]</span>
+console.log(splitStrEle2<span class="token punctuation">)</span> // -&gt; <span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;c&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;e&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;f&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;g&quot;</span><span class="token punctuation">]</span>
+</code></pre></div><h5 id="string-substr-start-length-在字符串中抽取从-开始-下标开始的指定数目的字符">string.substr(start,length): 在字符串中抽取从 开始 下标开始的指定数目的字符</h5> <div class="language-json extra-class"><pre class="language-json"><code>/*
+    start<span class="token operator">:</span> 必需。要抽取的子串的起始下标。必须是数值。如果是负数，那么该参数声明从字符串的尾部开始算起的位置。也就是说，-<span class="token number">1</span> 指字符串中最后一个字符，-<span class="token number">2</span> 指倒数第二个字符，以此类推。
+    length<span class="token operator">:</span> 可选。子串中的字符数。必须是数值。如果省略了该参数，那么返回从 stringObject 的开始位置到结尾的字串。
+*/
+var substrStr = 'abcdefg'
+var substrStrEle = substrStr.substr(<span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+console.log(substrStrEle<span class="token punctuation">)</span>
+// -&gt; cd
+</code></pre></div><h5 id="string-substring-from-to-用于提取字符串中介于两个指定下标之间的字符。返回的子串包括-开始-处的字符，但不包括-结束-处的字符">string.substring(from, to): 用于提取字符串中介于两个指定下标之间的字符。返回的子串包括 开始 处的字符，但不包括 结束 处的字符</h5> <div class="language-json extra-class"><pre class="language-json"><code>
+/*
+    from<span class="token operator">:</span>必需。一个非负的整数，规定要提取的子串的第一个字符在 string Object 中的位置。
+    to<span class="token operator">:</span> 可选。一个非负的整数，比要提取的子串的最后一个字符在 string Object 中的位置多 <span class="token number">1</span>。如果省略该参数，那么返回的子串会一直到字符串的结尾。
+*/
+var substringStr = 'abcdefg'
+var substringStrEle = substringStr.substring(<span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+console.log(substringStrEle<span class="token punctuation">)</span>
+// -&gt; cd
+</code></pre></div><h5 id="tolowercase-把字符串转换为小写">toLowerCase(): 把字符串转换为小写</h5> <div class="language-json extra-class"><pre class="language-json"><code>var toLowerCaseStr = 'ABCDEFG'
+var toLowerCaseStrEle = toLowerCaseStr.toLowerCase(<span class="token punctuation">)</span>
+console.log(toLowerCaseStrEle<span class="token punctuation">)</span>
+// -&gt; abcdefg
+</code></pre></div><h5 id="touppercase-把字符串转换为大写">toUpperCase(): 把字符串转换为大写</h5> <div class="language-json extra-class"><pre class="language-json"><code>var toUpperCaseStr = 'abcdefg'
+var toUpperCaseStrEle = toUpperCaseStr.toUpperCase(<span class="token punctuation">)</span>
+console.log(toUpperCaseStrEle<span class="token punctuation">)</span>
+// -&gt; ABCDEFG
+</code></pre></div><h5 id="trim-去除字符串两边的空白">trim(): 去除字符串两边的空白</h5> <div class="language-json extra-class"><pre class="language-json"><code>var trimStr = ' abcdefg '
+var trimStrEle = trimStr.trim(<span class="token punctuation">)</span>
+console.log(trimStrEle<span class="token punctuation">)</span>
+// -&gt;abcdefg
+</code></pre></div><h5 id="includes-searchvalue-start-用来判断一个字符串是否包含一个指定的值，如果是返回-true，否则false">includes(searchvalue, start): 用来判断一个字符串是否包含一个指定的值，如果是返回 true，否则false</h5> <div class="language-json extra-class"><pre class="language-json"><code>var includesStr = 'abcdefg'
+var includesEle1 = includesStr.includes('a'<span class="token punctuation">)</span>
+var includesEle2 = includesStr.includes('z'<span class="token punctuation">)</span>
+console.log(includesEle1<span class="token punctuation">)</span> // -&gt; <span class="token boolean">true</span>
+console.log(includesEle2<span class="token punctuation">)</span> // -&gt; <span class="token boolean">false</span>
+</code></pre></div><h5 id="startswith-searchvalue-start-表示是否字符-串-位于string的头部位置-如果是返回-true，否则false">startsWith(searchvalue, start): 表示是否字符(串)位于string的头部位置, 如果是返回 true，否则false</h5> <div class="language-json extra-class"><pre class="language-json"><code>var startsWithStr = 'abcdefg'
+var startsWithStrEle1 = startsWithStr.startsWith('a'<span class="token punctuation">)</span>
+var startsWithStrEle2 = startsWithStr.startsWith('b'<span class="token punctuation">)</span>
+console.log(startsWithStrEle1<span class="token punctuation">)</span> // -&gt; <span class="token boolean">true</span>
+console.log(startsWithStrEle2<span class="token punctuation">)</span> // -&gt; <span class="token boolean">false</span>
+</code></pre></div><h5 id="endswith-searchvalue-start-表示是否字符-串-位于string的尾部位置-如果是返回-true，否则false">endsWith(searchvalue, start): 表示是否字符(串)位于string的尾部位置, 如果是返回 true，否则false</h5> <div class="language-json extra-class"><pre class="language-json"><code>var endsWithStr = 'abcdefg'
+var endsWithStrEle1 = endsWithStr.endsWith('f'<span class="token punctuation">)</span>
+var endsWithStrEle2 = endsWithStr.endsWith('g'<span class="token punctuation">)</span>
+console.log(endsWithStrEle1<span class="token punctuation">)</span> // -&gt; <span class="token boolean">false</span>
+console.log(endsWithStrEle2<span class="token punctuation">)</span> // -&gt; <span class="token boolean">true</span>
+</code></pre></div><h5 id="模板字符串">${}: 模板字符串</h5> <div class="language-json extra-class"><pre class="language-json"><code>var str1 = 'iamlqy'
+var template = `我是$<span class="token punctuation">{</span>str1<span class="token punctuation">}</span>`
+console.log(template<span class="token punctuation">)</span>
+// -&gt; 我是iamlqy
+</code></pre></div><h5 id="repeat-num-repeat方法返回一个新字符串，表示将原字符串重复n次">repeat(num): repeat方法返回一个新字符串，表示将原字符串重复n次</h5> <div class="language-json extra-class"><pre class="language-json"><code>'x'.repeat(<span class="token number">3</span><span class="token punctuation">)</span> // <span class="token string">&quot;xxx&quot;</span>
+'hello'.repeat(<span class="token number">2</span><span class="token punctuation">)</span> // <span class="token string">&quot;hellohello&quot;</span>
+'na'.repeat(<span class="token number">0</span><span class="token punctuation">)</span> // <span class="token string">&quot;&quot;</span>
+</code></pre></div><p>参数如果是小数，会被取整</p> <div class="language-json extra-class"><pre class="language-json"><code>'na'.repeat(<span class="token number">2.9</span><span class="token punctuation">)</span> // <span class="token string">&quot;nana&quot;</span>
+</code></pre></div><p>如果repeat的参数是负数或者Infinity，会报错</p> <div class="language-json extra-class"><pre class="language-json"><code>'na'.repeat(Infinity<span class="token punctuation">)</span>
+// RangeError
+'na'.repeat(-<span class="token number">1</span><span class="token punctuation">)</span>
+// RangeError
+</code></pre></div><p>但是，如果参数是 0 到-1 之间的小数，则等同于 0，这是因为会先进行取整运算。0 到-1 之间的小数，取整以后等于-0，repeat视同为 0。</p> <div class="language-json extra-class"><pre class="language-json"><code>'na'.repeat(-<span class="token number">0.9</span><span class="token punctuation">)</span> // <span class="token string">&quot;&quot;</span>
+</code></pre></div><p>参数NaN等同于 0</p> <div class="language-json extra-class"><pre class="language-json"><code>
+'na'.repeat(NaN<span class="token punctuation">)</span> // <span class="token string">&quot;&quot;</span>
+```json
+如果repeat的参数是字符串，则会先转换成数字
+```json
+'na'.repeat('na'<span class="token punctuation">)</span> // <span class="token string">&quot;&quot;</span>
+'na'.repeat('<span class="token number">3</span>'<span class="token punctuation">)</span> // <span class="token string">&quot;nanana&quot;</span>
+</code></pre></div><h4 id="at">at()</h4> <p>ES5 对字符串对象提供charAt方法，返回字符串给定位置的字符。该方法不能识别码点大于0xFFFF的字符。</p> <div class="language-json extra-class"><pre class="language-json"><code>'abc'.charAt(<span class="token number">0</span><span class="token punctuation">)</span> // <span class="token string">&quot;a&quot;</span>
+'𠮷'.charAt(<span class="token number">0</span><span class="token punctuation">)</span> // <span class="token string">&quot;\uD842&quot;</span>
+</code></pre></div><p>上面代码中的第二条语句，charAt方法期望返回的是用2个字节表示的字符，但汉字“𠮷”占用了4个字节，charAt(0)表示获取这4个字节中的前2个字节，很显然，这是无法正常显示的。</p> <p>目前，有一个提案，提出字符串实例的at方法，可以识别 Unicode 编号大于0xFFFF的字符，返回正确的字符。</p> <div class="language-json extra-class"><pre class="language-json"><code>'abc'.at(<span class="token number">0</span><span class="token punctuation">)</span> // <span class="token string">&quot;a&quot;</span>
+'𠮷'.at(<span class="token number">0</span><span class="token punctuation">)</span> // <span class="token string">&quot;𠮷&quot;</span>
+</code></pre></div><h4 id="padstart-minlength-string-，用于头部补齐-padend-minlength-string-用于尾部补齐">padStart(minLength, string)，用于头部补齐,padEnd(minLength,string) ,用于尾部补齐</h4> <div class="language-json extra-class"><pre class="language-json"><code>'x'.padStart(<span class="token number">5</span><span class="token punctuation">,</span> 'ab'<span class="token punctuation">)</span> // 'ababx'
+'x'.padStart(<span class="token number">4</span><span class="token punctuation">,</span> 'ab'<span class="token punctuation">)</span> // 'abax'
+
+'x'.padEnd(<span class="token number">5</span><span class="token punctuation">,</span> 'ab'<span class="token punctuation">)</span> // 'xabab'
+'x'.padEnd(<span class="token number">4</span><span class="token punctuation">,</span> 'ab'<span class="token punctuation">)</span> // 'xaba'
+
+</code></pre></div><p>如果原字符串的长度，等于或大于指定的最小长度，则返回原字符串</p> <div class="language-json extra-class"><pre class="language-json"><code>'xxx'.padStart(<span class="token number">2</span><span class="token punctuation">,</span> 'ab'<span class="token punctuation">)</span> // 'xxx'
+'xxx'.padEnd(<span class="token number">2</span><span class="token punctuation">,</span> 'ab'<span class="token punctuation">)</span> // 'xxx'
+```json
+如果用来补全的字符串与原字符串，两者的长度之和超过了指定的最小长度，则会截去超出位数的补全字符串
+```json
+'abc'.padStart(<span class="token number">10</span><span class="token punctuation">,</span> '<span class="token number">0123456789</span>'<span class="token punctuation">)</span>
+// '<span class="token number">0123456</span>abc'
+</code></pre></div><p>如果省略第二个参数，默认使用空格补全长度</p> <div class="language-json extra-class"><pre class="language-json"><code>'x'.padStart(<span class="token number">4</span><span class="token punctuation">)</span> // '   x'
+'x'.padEnd(<span class="token number">4</span><span class="token punctuation">)</span> // 'x   '
+</code></pre></div><p>padStart的常见用途是为数值补全指定位数。下面代码生成 10 位的数值字符串</p> <div class="language-json extra-class"><pre class="language-json"><code>'<span class="token number">1</span>'.padStart(<span class="token number">10</span><span class="token punctuation">,</span> '<span class="token number">0</span>'<span class="token punctuation">)</span> // <span class="token string">&quot;0000000001&quot;</span>
+'<span class="token number">12</span>'.padStart(<span class="token number">10</span><span class="token punctuation">,</span> '<span class="token number">0</span>'<span class="token punctuation">)</span> // <span class="token string">&quot;0000000012&quot;</span>
+'<span class="token number">123456</span>'.padStart(<span class="token number">10</span><span class="token punctuation">,</span> '<span class="token number">0</span>'<span class="token punctuation">)</span> // <span class="token string">&quot;0000123456&quot;</span>
+</code></pre></div><p>另一个用途是提示字符串格式</p> <div class="language-json extra-class"><pre class="language-json"><code>'<span class="token number">12</span>'.padStart(<span class="token number">10</span><span class="token punctuation">,</span> 'YYYY-MM-DD'<span class="token punctuation">)</span> // <span class="token string">&quot;YYYY-MM-12&quot;</span>
+'<span class="token number">09</span>-<span class="token number">12</span>'.padStart(<span class="token number">10</span><span class="token punctuation">,</span> 'YYYY-MM-DD'<span class="token punctuation">)</span> // <span class="token string">&quot;YYYY-09-12&quot;</span>
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2018-9-5 14:29:48</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/vuepressBlog/zh/article/set-and-map.html" class="prev">
+          Hi、了解下Set和Map
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/vuepressBlog/assets/js/18.863e58d3.js" defer></script><script src="/vuepressBlog/assets/js/app.ef9b4f08.js" defer></script>
+  </body>
+</html>

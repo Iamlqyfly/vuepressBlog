@@ -14,12 +14,12 @@ module.exports = {
     '/': {
       lang: 'zh-CN',
       title: 'iamlqy',
-      description: 'Web Developer、Amateur painter、Wanna be a designer'
+      description: 'Web Front-End Developer、Amateur painter、Wanna be a designer'
     },
     '/en/': {
       lang: 'en-US',
       title: 'iamlqy',
-      description: 'Web Developer、Amateur painter、Wanna be a designer'
+      description: 'Web Front-End Developer、Amateur painter、Wanna be a designer'
     }
   },
   configureWebpack: buildConfig.configureWebpack,
