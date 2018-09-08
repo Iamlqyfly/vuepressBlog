@@ -24,10 +24,10 @@ module.exports = {
           text: '摄影',
           link: '/zh/photography/'
         },
-        // {
-        //   text: '简历',
-        //   link: 'https://hacknical.com/Iamlqyfly/resume?locale=zh'
-        // } 
+        {
+          text: '简历',
+          link: 'https://hacknical.com/Iamlqyfly/resume?locale=zh'
+        } 
       ],
       sidebar: {
       '/zh/article/': helper.utils.genSidebarConfig('最新文章', './docs/zh/article/', false)
